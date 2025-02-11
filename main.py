@@ -8,7 +8,7 @@ from PyQt6.QtWidgets import QApplication, QMainWindow
 class MainWindow(QMainWindow):
     def __init__(self):
         super().__init__()
-        uic.loadUi('UI.ui.ui', self)
+        uic.loadUi('UI.ui', self)
         self.button = self.findChild(QtWidgets.QPushButton, 'pushButton')
         self.button.clicked.connect(self.draw_circle)
         self.circles = []
